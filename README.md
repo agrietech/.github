@@ -17,6 +17,7 @@
 ## Demonstration & Download
 
 [![Watch EthioFarm Demo Video](https://img.shields.io/badge/Demo-Watch%20Demonstration-0284C7?style=for-the-badge&logo=youtube&logoColor=white)](PASTE_VIDEO_DEMO_LINK_HERE)
+
 [![Download EthioFarm App](https://img.shields.io/badge/Download-EthioFarm%20App-15803D?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/file/d/1y71KTIHfFaIaEqArmZm9yI5O4IOSx0Ys/view?usp=sharing)
 
 ---
@@ -55,10 +56,10 @@ The platform is maintained across three core repositories within the [`agrietech
 
 | Contributor Full Name | Institutional CTC ID | Engineering Role | Delivered Subsystems & Core Architectures |
 | :--- | :---: | :--- | :--- |
-| **Abraham Amogne** | `CTC-329-26` | Platform Architect & Full-Stack Engineer | Distributed system architecture, Express PostGIS gateway, satellite data pipelines, RUSLE soil model, Joyner-Boore seismology, multi-channel notification engine, and Flutter client foundation. |
-| **Alen Biruk** | `CTC-2176-26` | Geospatial Operations & IoT Specialist | Parcel polygon registry, OCHA administrative boundary integration, IoT soil sensor telemetry, and volumetric water content gauges. |
-| **Zinegnaw Kebede** | `CTC-514-26` | Computer Vision & Pathology Specialist | Interactive browser webcam viewfinder, multi-step leaf disease classification, localized remedy cards, and diagnosis history log explorer. |
-| **Banchamlak Golla** | `CTC-2952-26` | Agro-Meteorology & Alerts Specialist | Hyper-local weather telemetry, 24-hour temperature curves, multi-hazard early warning cards, and livestock herd registry. |
+| **Abraham Amogne** | `CTC-3291-26` | Team Leader, Platform Architect & Full-Stack Engineer | Distributed system architecture, Express PostGIS gateway, satellite data pipelines, RUSLE soil model, Joyner-Boore seismology, multi-channel notification engine, and Flutter client foundation. |
+| **Alen Biruk** | `CTC-2176-26` | Geospatial Operations & IoT  | Parcel polygon registry, OCHA administrative boundary integration, IoT soil sensor telemetry, and volumetric water content gauges. |
+| **Zinegnaw Kebede** | `CTC-514-26` | Computer Vision & Pathology  | Interactive browser webcam viewfinder, multi-step leaf disease classification, localized remedy cards, and diagnosis history log explorer. |
+| **Banchamlak Golla** | `CTC-2952-26` | Agro-Meteorology & Alerts | Hyper-local weather telemetry, 24-hour temperature curves, multi-hazard early warning cards, and livestock herd registry. |
 
 ---
 
