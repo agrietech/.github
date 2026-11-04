@@ -17,7 +17,7 @@
 ## Demonstration & Download
 
 [![Watch EthioFarm Demo Video](https://img.shields.io/badge/Demo-Watch%20Demonstration-0284C7?style=for-the-badge&logo=youtube&logoColor=white)](PASTE_VIDEO_DEMO_LINK_HERE)
-[![Download EthioFarm App](https://img.shields.io/badge/Download-EthioFarm%20App-15803D?style=for-the-badge&logo=android&logoColor=white)](PASTE_ETHIOFARM_APP_LINK_HERE)
+[![Download EthioFarm App](https://img.shields.io/badge/Download-EthioFarm%20App-15803D?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/file/d/1y71KTIHfFaIaEqArmZm9yI5O4IOSx0Ys/view?usp=sharing)
 
 ---
 
