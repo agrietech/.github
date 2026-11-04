@@ -10,8 +10,6 @@
 [![Mobile Verification](https://img.shields.io/badge/Mobile%20Suites-207%20Passing-22C55E?style=flat-square)](https://github.com/agrietech/agriEtech-frontend)
 [![Web Production Build](https://img.shields.io/badge/Web%20Build-Passing%20(0%20Errors)-22C55E?style=flat-square)](https://github.com/agrietech/ethiofarm-web)
 
-[Introduction](#introduction) • [Statement of Problem](#statement-of-problem) • [Objectives (Solutions)](#objectives-solutions) • [Key Features](#key-features) • [Actors](#actors) • [Limitations](#limitations) • [Methodology](#methodology) • [Functional Requirements](#functional-requirements) • [Non-Functional Requirements](#non-functional-requirements) • [Testing and Evaluation Used](#testing-and-evaluation-used) • [Class Diagram](#class-diagram) • [Technologies Used](#technologies-used) • [UI](#ui) • [Unique Features](#unique-features) • [Conclusion](#conclusion)
-
 </div>
 
 ---
@@ -20,6 +18,26 @@
 
 [![Watch EthioFarm Demo Video](https://img.shields.io/badge/Demo-Watch%20Demonstration-0284C7?style=for-the-badge&logo=youtube&logoColor=white)](PASTE_VIDEO_DEMO_LINK_HERE)
 [![Download EthioFarm App](https://img.shields.io/badge/Download-EthioFarm%20App-15803D?style=for-the-badge&logo=android&logoColor=white)](PASTE_ETHIOFARM_APP_LINK_HERE)
+
+---
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Statement of Problem](#statement-of-problem)
+3. [Objectives (Solutions)](#objectives-solutions)
+4. [Key Features](#key-features)
+5. [Actors](#actors)
+6. [Limitations](#limitations)
+7. [Methodology](#methodology)
+8. [Functional Requirements](#functional-requirements)
+9. [Non-Functional Requirements](#non-functional-requirements)
+10. [Testing and Evaluation Used](#testing-and-evaluation-used)
+11. [Class Diagram](#class-diagram)
+12. [Technologies Used](#technologies-used)
+13. [UI](#ui)
+14. [Unique Features](#unique-features)
+15. [Conclusion](#conclusion)
 
 ---
 
