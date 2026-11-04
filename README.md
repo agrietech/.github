@@ -10,7 +10,7 @@
 [![Mobile Verification](https://img.shields.io/badge/Mobile%20Suites-207%20Passing-22C55E?style=flat-square)](https://github.com/agrietech/agriEtech-frontend)
 [![Web Production Build](https://img.shields.io/badge/Web%20Build-Passing%20(0%20Errors)-22C55E?style=flat-square)](https://github.com/agrietech/ethiofarm-web)
 
-[Introduction](#introduction) • [Statement of Problem](#statement-of-problem) • [Objectives (Solutions)](#objectives-solutions) • [Key Features](#key-features) • [Unique Features](#unique-features) • [Actors](#actors) • [Methodology](#methodology) • [Functional Requirements](#functional-requirements) • [Non-Functional Requirements](#non-functional-requirements) • [Class Diagram](#class-diagram) • [Technologies Used](#technologies-used) • [UI](#ui) • [Testing and Evaluation Used](#testing-and-evaluation-used) • [Limitations](#limitations) • [Conclusion](#conclusion)
+[Introduction](#introduction) • [Statement of Problem](#statement-of-problem) • [Objectives (Solutions)](#objectives-solutions) • [Key Features](#key-features) • [Actors](#actors) • [Limitations](#limitations) • [Methodology](#methodology) • [Functional Requirements](#functional-requirements) • [Non-Functional Requirements](#non-functional-requirements) • [Testing and Evaluation Used](#testing-and-evaluation-used) • [Class Diagram](#class-diagram) • [Technologies Used](#technologies-used) • [UI](#ui) • [Unique Features](#unique-features) • [Conclusion](#conclusion)
 
 </div>
 
@@ -124,16 +124,6 @@ EthioFarm resolves these structural crises through five primary technical object
 
 ---
 
-## Unique Features
-
-* **Sovereign Agricultural Lime Dosage Algorithm**: Replaces generic fertilizer recommendations with calibrated stoichiometric lime tonnage calculations based on specific Ethiopian highland edaphic profiles.
-* **Rift Valley Seismic Dam Attenuation**: Tailored Joyner-Boore PGA curves directly evaluating structural vulnerability of earth-fill dams and irrigation canals in the East African Rift.
-* **7-Tier Anti-Panic Institutional Governance**: Prevents premature harvesting and localized market crashes by enforcing an administrative validation gate before public alert broadcasts.
-* **Deterministic Offline Decision Matrices**: Guaranteed localized diagnostic capability even during complete cloud connectivity severed events.
-* **Ethiopic Protocol-Level Byte Optimization**: Native dual-alphabet character budgeting engineered specifically for Ge'ez/Amharic Unicode script transmissions over cellular networks.
-
----
-
 ## Actors
 
 The platform explicitly models 7 institutional actors corresponding to the administrative hierarchy of the Ethiopian agricultural extension system:
@@ -150,7 +140,62 @@ The platform explicitly models 7 institutional actors corresponding to the admin
 
 ---
 
-## System Architecture
+## Limitations
+
+* **Atmospheric Optical Occlusion**: Cloud-cover during the *Kiremt* monsoon season impairs optical Sentinel-2 reflectance; mitigated by Sentinel-1 synthetic aperture radar (SAR) backscatter penetration.
+* **Carrier Network Delivery Latency**: SMS delivery across rural 2G Kebeles is subject to telecommunication gateway congestion; mitigated by real-time USSD callback sessions.
+* **Hardware GPS Drift**: Low-cost mobile handset GPS chips exhibit 3–5 meter drift; mitigated by Kebele Development Agent manual parcel polygon confirmation.
+* **Baseline Soil Sampling Requirements**: Accurate lime dosage requires initial soil pH calibration, which must be recorded through Farmers Training Center (FTC) ground testing.
+
+---
+
+## Methodology
+
+The platform engineering followed an **Agile Domain-Driven Design (DDD)** methodology with continuous integration:
+
+1. **Clean Architecture Separation**: Strict decoupling into Presentation, Application, Domain, and Infrastructure tiers to guarantee testability and database agnosticism.
+2. **Empirical Parameterization**: Mathematical engines (RUSLE, Lime stoichiometry, Joyner-Boore) were parameterized using peer-reviewed pedological and geophysical data for Ethiopia.
+3. **Defensive Resilience Engineering**: All cloud connectors incorporate deterministic offline baseline fallbacks to ensure uninterrupted local operation during network partition events.
+4. **Test-Driven Verification**: Quality gates enforce 100% test passing across unit, integration, and widget suites before production deployment.
+
+---
+
+## Functional Requirements
+
+* **FR1 (Parcel Georeferencing)**: The system shall capture, validate, and persist farm plot boundary polygons within Ethiopian sovereign geographic boundaries.
+* **FR2 (Telemetry Ingestion)**: The system shall ingest real-time volumetric soil moisture, temperature, and electrical conductivity from physical or synthetic IoT probes.
+* **FR3 (Hazard Modeling)**: The system shall compute RUSLE soil erosion rates, stoichiometric lime requirements, and Joyner-Boore seismic ground acceleration.
+* **FR4 (Crop Pathology Triage)**: The system shall analyze uploaded leaf photography, identify pathogens with confidence scoring, and output localized chemical/organic remedies.
+* **FR5 (Multi-Channel Dispatch)**: The system shall broadcast validated hazard alerts via SMS (GSM-7/UCS-2) and USSD callbacks.
+* **FR6 (Role-Based Access Control)**: The system shall restrict alert broadcast authority and spatial data access according to institutional role hierarchy.
+
+---
+
+## Non-Functional Requirements
+
+* **NFR1 (Performance)**: API gateway spatial query latency shall resolve in $< 200\text{ ms}$ under nominal operating load.
+* **NFR2 (Security)**: All endpoints shall enforce JWT bearer authentication with spatial geographic bounding validation and rate limiting.
+* **NFR3 (Scalability)**: Background notification dispatch and satellite ingestion tasks shall be decoupled using Redis BullMQ worker queues.
+* **NFR4 (Usability & Accessibility)**: Web interfaces shall comply with WCAG 2.1 AA standards; mobile interfaces shall support low-bandwidth offline caching.
+* **NFR5 (Reliability)**: The core platform shall provide local deterministic decision matrix fallbacks in the event of external cloud API failure.
+
+---
+
+## Testing and Evaluation Used
+
+| Subsystem | Metric | Verified Status | Execution Command |
+| :--- | :--- | :---: | :--- |
+| **Backend Service Engine** | Static Code Analysis | **0 Errors, 0 Warnings** | `npm run lint` |
+| **Backend Service Engine** | Unit & Integration Test Suites | **34 Suites, 226 Tests Passed** | `npm test` |
+| **Backend Service Engine** | Service Smoke Checks | **19 of 19 Passed (100%)** | `npm run test:smoke` |
+| **Mobile Cross-Platform Client** | Dart Typed Static Analysis | **0 Issues Found** | `flutter analyze` |
+| **Mobile Cross-Platform Client** | Automated Unit & Widget Tests | **207 of 207 Tests Passed** | `flutter test` |
+| **Enterprise Web Portal** | TypeScript Production Build | **0 Compiler Errors (Clean Bundle)** | `npm run build` |
+| **Enterprise Web Portal** | Accessibility Standards | **WCAG 2.1 AA Compliant ($\ge 4.5:1$)** | Verified across themes |
+
+---
+
+## Class Diagram
 
 ```text
 ┌─────────────────────────────────────────────────────────────────────────────────────────────────┐
@@ -182,10 +227,6 @@ The platform explicitly models 7 institutional actors corresponding to the admin
 │                  PostgreSQL + PostGIS (GeoJSON) · Prisma ORM · Redis Cache                      │
 └─────────────────────────────────────────────────────────────────────────────────────────────────┘
 ```
-
----
-
-## Class Diagram
 
 ```mermaid
 classDiagram
@@ -252,6 +293,20 @@ classDiagram
 
 ---
 
+## Technologies Used
+
+| Architectural Tier | Selected Technologies |
+| :--- | :--- |
+| **Enterprise Web** | React 18.3, TypeScript 5.6, Vite 6, Tailwind CSS, Lucide Icons, Axios Interceptors |
+| **Cross-Platform Mobile** | Flutter 3.x, Dart 3.x, Riverpod 2.x, GoRouter, Material 3 Design Tokens |
+| **API Gateway & Core** | Node.js 18+ LTS, Express 4, Prisma ORM, Helmet, Express Rate Limit, BullMQ |
+| **Spatial Persistence & Cache** | PostgreSQL 15, PostGIS 3.3 (GeoJSON, Spatial Indexing), Redis 7 (Distributed Cache & Queues) |
+| **Planetary Remote Sensing & AI** | Copernicus Sentinel-2 MSI, Sentinel-1 SAR, Landsat 8/9 TIRS, CHIRPS SPI-3, Google Gemini Vision |
+| **Telecommunications Gateway** | Africa's Talking USSD Protocol, GSM-7 / UCS-2 SMS Byte Budgeter, Web Audio Synthesis |
+| **Verification & Quality** | Jest (34 Suites / 226 Tests), Flutter Test (207 Tests), ESLint, TypeScript Compiler |
+
+---
+
 ## UI
 
 The user interface implements a role-adaptive architecture tailored to diverse hardware and bandwidth capabilities:
@@ -270,72 +325,13 @@ The user interface implements a role-adaptive architecture tailored to diverse h
 
 ---
 
-## Methodology
+## Unique Features
 
-The platform engineering followed an **Agile Domain-Driven Design (DDD)** methodology with continuous integration:
-
-1. **Clean Architecture Separation**: Strict decoupling into Presentation, Application, Domain, and Infrastructure tiers to guarantee testability and database agnosticism.
-2. **Empirical Parameterization**: Mathematical engines (RUSLE, Lime stoichiometry, Joyner-Boore) were parameterized using peer-reviewed pedological and geophysical data for Ethiopia.
-3. **Defensive Resilience Engineering**: All cloud connectors incorporate deterministic offline baseline fallbacks to ensure uninterrupted local operation during network partition events.
-4. **Test-Driven Verification**: Quality gates enforce 100% test passing across unit, integration, and widget suites before production deployment.
-
----
-
-## Functional Requirements
-
-* **FR1 (Parcel Georeferencing)**: The system shall capture, validate, and persist farm plot boundary polygons within Ethiopian sovereign geographic boundaries.
-* **FR2 (Telemetry Ingestion)**: The system shall ingest real-time volumetric soil moisture, temperature, and electrical conductivity from physical or synthetic IoT probes.
-* **FR3 (Hazard Modeling)**: The system shall compute RUSLE soil erosion rates, stoichiometric lime requirements, and Joyner-Boore seismic ground acceleration.
-* **FR4 (Crop Pathology Triage)**: The system shall analyze uploaded leaf photography, identify pathogens with confidence scoring, and output localized chemical/organic remedies.
-* **FR5 (Multi-Channel Dispatch)**: The system shall broadcast validated hazard alerts via SMS (GSM-7/UCS-2) and USSD callbacks.
-* **FR6 (Role-Based Access Control)**: The system shall restrict alert broadcast authority and spatial data access according to institutional role hierarchy.
-
----
-
-## Non-Functional Requirements
-
-* **NFR1 (Performance)**: API gateway spatial query latency shall resolve in $< 200\text{ ms}$ under nominal operating load.
-* **NFR2 (Security)**: All endpoints shall enforce JWT bearer authentication with spatial geographic bounding validation and rate limiting.
-* **NFR3 (Scalability)**: Background notification dispatch and satellite ingestion tasks shall be decoupled using Redis BullMQ worker queues.
-* **NFR4 (Usability & Accessibility)**: Web interfaces shall comply with WCAG 2.1 AA standards; mobile interfaces shall support low-bandwidth offline caching.
-* **NFR5 (Reliability)**: The core platform shall provide local deterministic decision matrix fallbacks in the event of external cloud API failure.
-
----
-
-## Technologies Used
-
-| Architectural Tier | Selected Technologies |
-| :--- | :--- |
-| **Enterprise Web** | React 18.3, TypeScript 5.6, Vite 6, Tailwind CSS, Lucide Icons, Axios Interceptors |
-| **Cross-Platform Mobile** | Flutter 3.x, Dart 3.x, Riverpod 2.x, GoRouter, Material 3 Design Tokens |
-| **API Gateway & Core** | Node.js 18+ LTS, Express 4, Prisma ORM, Helmet, Express Rate Limit, BullMQ |
-| **Spatial Persistence & Cache** | PostgreSQL 15, PostGIS 3.3 (GeoJSON, Spatial Indexing), Redis 7 (Distributed Cache & Queues) |
-| **Planetary Remote Sensing & AI** | Copernicus Sentinel-2 MSI, Sentinel-1 SAR, Landsat 8/9 TIRS, CHIRPS SPI-3, Google Gemini Vision |
-| **Telecommunications Gateway** | Africa's Talking USSD Protocol, GSM-7 / UCS-2 SMS Byte Budgeter, Web Audio Synthesis |
-| **Verification & Quality** | Jest (34 Suites / 226 Tests), Flutter Test (207 Tests), ESLint, TypeScript Compiler |
-
----
-
-## Testing and Evaluation Used
-
-| Subsystem | Metric | Verified Status | Execution Command |
-| :--- | :--- | :---: | :--- |
-| **Backend Service Engine** | Static Code Analysis | **0 Errors, 0 Warnings** | `npm run lint` |
-| **Backend Service Engine** | Unit & Integration Test Suites | **34 Suites, 226 Tests Passed** | `npm test` |
-| **Backend Service Engine** | Service Smoke Checks | **19 of 19 Passed (100%)** | `npm run test:smoke` |
-| **Mobile Cross-Platform Client** | Dart Typed Static Analysis | **0 Issues Found** | `flutter analyze` |
-| **Mobile Cross-Platform Client** | Automated Unit & Widget Tests | **207 of 207 Tests Passed** | `flutter test` |
-| **Enterprise Web Portal** | TypeScript Production Build | **0 Compiler Errors (Clean Bundle)** | `npm run build` |
-| **Enterprise Web Portal** | Accessibility Standards | **WCAG 2.1 AA Compliant ($\ge 4.5:1$)** | Verified across themes |
-
----
-
-## Limitations
-
-* **Atmospheric Optical Occlusion**: Cloud-cover during the *Kiremt* monsoon season impairs optical Sentinel-2 reflectance; mitigated by Sentinel-1 synthetic aperture radar (SAR) backscatter penetration.
-* **Carrier Network Delivery Latency**: SMS delivery across rural 2G Kebeles is subject to telecommunication gateway congestion; mitigated by real-time USSD callback sessions.
-* **Hardware GPS Drift**: Low-cost mobile handset GPS chips exhibit 3–5 meter drift; mitigated by Kebele Development Agent manual parcel polygon confirmation.
-* **Baseline Soil Sampling Requirements**: Accurate lime dosage requires initial soil pH calibration, which must be recorded through Farmers Training Center (FTC) ground testing.
+* **Sovereign Agricultural Lime Dosage Algorithm**: Replaces generic fertilizer recommendations with calibrated stoichiometric lime tonnage calculations based on specific Ethiopian highland edaphic profiles.
+* **Rift Valley Seismic Dam Attenuation**: Tailored Joyner-Boore PGA curves directly evaluating structural vulnerability of earth-fill dams and irrigation canals in the East African Rift.
+* **7-Tier Anti-Panic Institutional Governance**: Prevents premature harvesting and localized market crashes by enforcing an administrative validation gate before public alert broadcasts.
+* **Deterministic Offline Decision Matrices**: Guaranteed localized diagnostic capability even during complete cloud connectivity severed events.
+* **Ethiopic Protocol-Level Byte Optimization**: Native dual-alphabet character budgeting engineered specifically for Ge'ez/Amharic Unicode script transmissions over cellular networks.
 
 ---
 
