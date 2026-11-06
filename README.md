@@ -14,7 +14,9 @@
 
 ---
 
-## Demonstration & Download
+## Pitch Deck, Demonstration & Download
+
+[![View EthioFarm Pitch Deck](https://img.shields.io/badge/Pitch%20Deck-View%20Presentation-EA4335?style=for-the-badge&logo=googleslides&logoColor=white)](PASTE_PITCH_DECK_LINK_HERE)
 
 [![Watch EthioFarm Demo Video](https://img.shields.io/badge/Demo-Watch%20Demonstration-0284C7?style=for-the-badge&logo=youtube&logoColor=white)](PASTE_VIDEO_DEMO_LINK_HERE)
 
