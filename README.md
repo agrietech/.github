@@ -16,9 +16,9 @@
 
 ## Pitch Deck, Demonstration & Download
 
-[![View EthioFarm Pitch Deck](https://img.shields.io/badge/Pitch%20Deck-View%20Presentation-EA4335?style=for-the-badge&logo=googleslides&logoColor=white)](PASTE_PITCH_DECK_LINK_HERE)
+[![View EthioFarm Pitch Deck](https://img.shields.io/badge/Pitch%20Deck-View%20Presentation-EA4335?style=for-the-badge&logo=googleslides&logoColor=white)](https://docs.google.com/presentation/d/1OEB-PKaVRlIK1CKvEzU35-pB8QjzOdT1/edit?usp=sharing&ouid=112980006098843223107&rtpof=true&sd=true)
 
-[![Watch EthioFarm Demo Video](https://img.shields.io/badge/Demo-Watch%20Demonstration-0284C7?style=for-the-badge&logo=youtube&logoColor=white)](PASTE_VIDEO_DEMO_LINK_HERE)
+[![Watch EthioFarm Demo Video](https://img.shields.io/badge/Demo-Watch%20Demonstration-0284C7?style=for-the-badge&logo=youtube&logoColor=white)](https://drive.google.com/file/d/16nr0EQMg5g-00hxHrHI4fiNwCpk2U9WF/view?usp=sharing)
 
 [![Download EthioFarm App](https://img.shields.io/badge/Download-EthioFarm%20App-15803D?style=for-the-badge&logo=android&logoColor=white)](https://drive.google.com/file/d/1y71KTIHfFaIaEqArmZm9yI5O4IOSx0Ys/view?usp=sharing)
 
